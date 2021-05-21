@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Safe Outs Business'),
+      home: MyHomePage(title: 'Safe Outs'),
     );
   }
 }
