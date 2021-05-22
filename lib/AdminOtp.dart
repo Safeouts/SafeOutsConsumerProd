@@ -46,12 +46,8 @@ class AdminOtp extends StatelessWidget {
                   "assets/images/logo.png",
                   height: 200,
                 ),
-                Text('BUSINESS',style: TextStyle(
-                    fontSize: 16.0
-                ),
-                ),
                 SizedBox(height: 28.0),
-                Text('Enter Otp',
+                Text('Enter OTP',
                   style: TextStyle(
                     fontSize: 25.0,
                     fontWeight: FontWeight.bold,

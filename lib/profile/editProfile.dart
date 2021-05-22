@@ -85,7 +85,9 @@ class _ProfileState extends State<EditProfile> {
                             //       : FileImage(imageFile),
                             // )
                         ),
+
                       ),
+
                       Positioned(
                           bottom: 0,
                           right: 0,
@@ -110,27 +112,126 @@ class _ProfileState extends State<EditProfile> {
                     ],
                   ),
                 ),
-
+                Container(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      SizedBox(
+                        child: CircleAvatar(
+                          radius: 40.0,
+                          backgroundColor: Colors.white,
+                          child: CircleAvatar(
+                            child: Align(
+                              alignment: Alignment.bottomRight,
+                              child: CircleAvatar(
+                                backgroundColor: Colors.white,
+                                radius: 12.0,
+                                child: Icon(
+                                  Icons.camera_alt,
+                                  size: 15.0,
+                                  color: Color(0xFF404040),
+                                ),
+                              ),
+                            ),
+                            radius: 38.0,
+                            backgroundImage: AssetImage(
+                                'assets/images/default.png'),
+                          ),
+                        ),
+                      ),
+                      // Center(
+                      //   child: Container(
+                      //     padding: EdgeInsets.only(top: 16.0),
+                      //     child: Text(
+                      //       'Hi Sir David',
+                      //       style: TextStyle(
+                      //         fontFamily: 'SF Pro',
+                      //         fontWeight: FontWeight.w700,
+                      //         fontSize: 24.0,
+                      //       ),
+                      //     ),
+                      //   ),
+                      // ),
+                      // Center(
+                      //   child: Container(
+                      //     padding: EdgeInsets.only(top: 8.0),
+                      //     child: Text(
+                      //       'Wildlife Advocate',
+                      //       style: TextStyle(
+                      //         fontFamily: 'SF Pro',
+                      //         fontSize: 12.0,
+                      //       ),
+                      //     ),
+                      //   ),
+                      // ),
+                      // Center(
+                      //   child: Padding(
+                      //     padding: const EdgeInsets.all(24.0),
+                      //     child: TextButton(
+                      //       onPressed: () {
+                      //         print('im pressed');
+                      //       },
+                            // child: Container(
+                            //   padding:
+                            //   EdgeInsets.fromLTRB(16.0, 8.0, 16.0, 8.0),
+                            //   decoration: BoxDecoration(
+                            //     color: Color(0xFFEF476F),
+                            //     borderRadius:
+                            //     BorderRadius.all(Radius.circular(20.0)),
+                            //   ),
+                              // child: Text(
+                              //   'Edit Profile',
+                              //   style: TextStyle(
+                              //     fontFamily: 'SF Pro',
+                              //     color: Colors.white,
+                              //     fontWeight: FontWeight.w500,
+                              //     fontSize: 16.0,
+                              //   ),
+                              // ),
+                            // ),
+                      //     ),
+                      //   ),
+                      // ),
+                    ],
+                  ),
+                  margin: EdgeInsets.all(16.0),
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(16.0),
+                  ),
+                ),
                 SizedBox(
                   height: 20,
                 ),
+             TextFormField(
+          decoration: const InputDecoration(
+            icon: Icon(Icons.person),
+            hintText: 'Enter Full Name',
+            labelText: 'Name *',
+          ),
                 // buildTextFormField(
                 //   lable: 'Full Name',
                 //   hint: 'Enter Full Name',
                 //   error: 'Please Enter Full Name',
                 //   // controller: nameController,
-                // ),
+                ),
 
                 SizedBox(
                   height: 20,
                 ),
-                // buildTextFormField(
+                 TextFormField(
+                      decoration: const InputDecoration(
+                         icon: Icon(Icons.phone),
+                         hintText: 'Phone Number',
+                         labelText: 'Number *',
+                     ),
+                //      buildTextFormField(
                 //   // controller: emailController,
                 //
                 //   hint: 'Phone Number',
                 //   lable: 'Phone',
                 //   error: 'Please Enter phone number',
-                // ),
+                ),
                 SizedBox(
                   height: 20,
                 ),
