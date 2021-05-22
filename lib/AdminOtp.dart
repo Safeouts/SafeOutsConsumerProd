@@ -1,35 +1,37 @@
 import 'package:flutter/material.dart';
 import 'package:safeoutsconsumerprod/profile/SettingsPage.dart';
 
+import 'admin_homepage.dart';
 
 
-class AdminOtp extends StatefulWidget {
-  final String phone;
-  AdminOtp(this.phone);
-  @override
-  State<StatefulWidget> createState() => _AdminOtpState();
-  }
 
-class _AdminOtpState extends State<AdminOtp>{
-  final GlobalKey<ScaffoldState> _scaffoldkey = GlobalKey<ScaffoldState>();
-  // String _verificationCode;
-  final TextEditingController _pinPutController = TextEditingController();
-  final FocusNode _pinPutFocusNode = FocusNode();
-  // String pin;
-  final BoxDecoration pinPutDecoration = BoxDecoration(
-    color: Colors.white,
-    borderRadius: BorderRadius.circular(10.0),
-    border: Border.all(
-      color: Colors.black,
-    ),
-  );
-  final BoxDecoration textDecoration = BoxDecoration(
-    color: Colors.teal,
-    borderRadius: BorderRadius.circular(10.0),
-    border: Border.all(
-      color: Colors.teal,
-    ),
-  );
+class AdminOtp extends StatelessWidget {
+  // final String phone;
+  // AdminOtp(this.phone);
+  // @override
+  // State<StatefulWidget> createState() => _AdminOtpState();
+  // }
+
+// class _AdminOtpState extends State<AdminOtp>{
+//   final GlobalKey<ScaffoldState> _scaffoldkey = GlobalKey<ScaffoldState>();
+//   // String _verificationCode;
+//   final TextEditingController _pinPutController = TextEditingController();
+//   final FocusNode _pinPutFocusNode = FocusNode();
+//   // String pin;
+//   final BoxDecoration pinPutDecoration = BoxDecoration(
+//     color: Colors.white,
+//     borderRadius: BorderRadius.circular(10.0),
+//     border: Border.all(
+//       color: Colors.black,
+//     ),
+//   );
+//   final BoxDecoration textDecoration = BoxDecoration(
+//     color: Colors.teal,
+//     borderRadius: BorderRadius.circular(10.0),
+//     border: Border.all(
+//       color: Colors.teal,
+//     ),
+//   );
 
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -111,7 +113,7 @@ class _AdminOtpState extends State<AdminOtp>{
                           {
                             Navigator.pushAndRemoveUntil(
                                 context,
-                                MaterialPageRoute(builder: (context) => SettingsPage()),
+                                MaterialPageRoute(builder: (context) => Home()),
                                     (route) => false);
                           }
                       //   });
@@ -164,10 +166,10 @@ class _AdminOtpState extends State<AdminOtp>{
   }
 
 
-  @override
-  void initState() {
-    // TODO: implement initState
-    super.initState();
-    _verifyPhone();
-  }
+  // @override
+  // void initState() {
+  //   // TODO: implement initState
+  //   super.initState();
+  //   _verifyPhone();
+  // }
 }

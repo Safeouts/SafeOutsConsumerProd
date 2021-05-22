@@ -26,13 +26,14 @@ class FirstScreen extends StatelessWidget{
                 width: 200,
               ),
               SizedBox(height: 20),
-              Text('CONSUMER'),
+              Text('SAFE OUTS' ),
+              Text('POWERED BY 1891'),
               SizedBox(height: 60),
               SizedBox(
                 width: 300,
                 height: 60,
                 child: RaisedButton(
-                  child: Text('lOGIN WITH pHONE nUMBER'),
+                  child: Text('Sign in with Phone no.'),
                   elevation: 5,
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.all(Radius.circular(16.0))),
@@ -40,7 +41,7 @@ class FirstScreen extends StatelessWidget{
                   onPressed: () {
                     Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
-                            builder: (BuildContext context) => Home()
+                            builder: (BuildContext context) => AdminOtp()
                         )
                     );
                   },

@@ -68,7 +68,9 @@ class Home extends StatelessWidget {
                     // onSearchTextChanged('');
                   },
                   ),
+
                 ),
+
               ),
 
             ],
